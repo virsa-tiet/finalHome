@@ -97,23 +97,25 @@ li a {
   text-align: center;
   font-size: 3.5rem;
   position: relative;
-  bottom: 600px;
+  bottom: 790px;
   font-family: Red Hat Text;
 }
 
 .name {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 270px;
   margin-bottom: 5px;
 }
 
 .content {
   margin: 0 170px 50px 170px;
+  text-align: center;
 }
 
 .phone {
   display: none;
 }
+
 
 @media only screen and (max-width: 995px) {
   .laptop {
@@ -139,7 +141,7 @@ li a {
     border: 6px solid;
     border-color: #E9C39C;
     text-align: center;
-    height:590px;
+    height:690px;
 
   }
   .card-img-top{
@@ -190,10 +192,10 @@ li a {
 
 @media only screen and (min-width: 1300px){
   .heading{
-    bottom: 700px;
+    bottom: 800px;
   }
   .name{
-    margin-top: 160px;
+    margin-top: 260px;
     margin-bottom: 10px;
   }
 
