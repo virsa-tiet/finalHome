@@ -97,13 +97,13 @@ li a {
   text-align: center;
   font-size: 3.5rem;
   position: relative;
-  bottom: 790px;
+  bottom: 590px;
   font-family: Red Hat Text;
 }
 
 .name {
   text-align: center;
-  margin-top: 270px;
+  margin-top: 70px;
   margin-bottom: 5px;
 }
 
@@ -195,8 +195,19 @@ li a {
     bottom: 800px;
   }
   .name{
-    margin-top: 260px;
+    margin-top: 320px;
     margin-bottom: 10px;
   }
 
+}
+
+.navbar img{
+  border:none;
+}
+.navbar{
+  background-color:transparent !important;
+  text-align:center !important;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+  color:black !important;
 }

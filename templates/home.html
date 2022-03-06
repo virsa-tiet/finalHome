@@ -29,8 +29,22 @@
   </head>
 
 <body>
-
-  <nav id="p2" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <style>
+    .alert{
+      margin:0;
+      padding-bottom:10px;
+      
+    }
+    
+  </style>
+  {% if s == True %}
+  <div id="fun" class="alert alert-info alert-dismissible fade show" role="alert">
+    <strong>Response Submitted!</strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endif %}
+  <nav id="p2" class="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid">
       <a href="home" class="logo">
         <img style="width: 120px;" src="static/./assets/logo.png">
@@ -67,6 +81,7 @@
       </div>
     </div>
   </nav>
+  
   <!-- ***** Main video Area Start ***** -->
   <section class="section main-banner" id="home" data-section="section1">
       <video autoplay muted loop id="bg-video">
@@ -207,7 +222,7 @@
       </div>
     </div>
   </section>
-<!-- ***** alumni ***** -->
+<!-- ***** alumni ***** 
   <section class="our-courses" id="courses">
     <div class="container">
       <div class="row">
@@ -294,7 +309,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 <!-- ***** facts about virsa ***** -->
   <section class="our-facts">
     <div class="container">
@@ -348,8 +363,59 @@
     </div>
   </section>
 <!-- ***** message from president ***** -->
+<style>
+  .video{
+    margin-top:100px;
+  }
+  form{
+    font-family:"poppins";
+    margin:0 20px 0 20px;
+  }
+  .form-label{
+    color:white;
+  }
+  .contact-us{
+    text-align:center;
+  }
+ input,textarea{
+   background-color:transparent  !important;
+   border:none !important;
+   border-bottom: 2px #5d5b4e solid !important;
+  color:white !important;
+   } 
+   input,textarea :focus{
+    border-bottom: 2px yellow solid ;
+   }
+ 
+</style>
   <section class="contact-us" id="contact">
-    <div class="container">
+    <form action="home" method="POST">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-sm-6  " >
+          <div class="mb-3 ">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div class="mb-3 ">
+
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="col-sm-6 ">
+          <div class="mb-3">
+           
+            <textarea rows="5" type="text" class="form-control" id="msg" name="msg" placeholder="Message" required ></textarea>
+          </div>>
+        </div>
+        
+      </div>
+      
+      
+      
+      <button type="submit" class="btn  btn-light btn-large" style="width: 200px; border-radius: 25px; margin-left: 1%;" onclick="myFunction()">Submit</button>
+    </form>
+    
+    <!--<div class="container">
       <div class="row">
         <div class="col-lg-9 align-self-center">
           <div class="row">
@@ -372,6 +438,7 @@
         </div>
       </div>
     </div>
+    -->
     <!-- ***** footer***** -->
     <div class="footer">
     <div class="social-media">

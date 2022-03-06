@@ -5,6 +5,12 @@
     box-sizing: border-box;
     
 }
+.navbar{
+    text-align:center !important;
+    background-color: black;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+  }
 body
 {
     justify-content: center;

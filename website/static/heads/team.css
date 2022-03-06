@@ -46,6 +46,7 @@
   opacity: 0.5 !important;
 }
 .image_text{
+
   text-align: center;
   font-size: 14px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -66,7 +67,7 @@ a:hover{
   display: flex;
   flex-wrap:nowrap;
   flex-direction: row;
-  justify-content: space-between !important */;
+  justify-content: space-between !important ;
   justify-content: space-around !important;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -101,9 +102,12 @@ a{
   text-align: center;
   padding: 0;
   opacity: 0.75;
-  font-size: 32px;
+  /* font-size: 32px; */
   color: #0077b5;
 
+}
+.image_text a{
+  font-size: 32px;
 }
 
 
@@ -156,3 +160,11 @@ a{
   }
 
 }
+.navbar{
+
+  text-align:center !important;
+  background-color: black;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
