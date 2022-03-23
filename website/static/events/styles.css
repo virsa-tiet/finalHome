@@ -213,3 +213,13 @@ li a {
 
 }
 
+@media only screen and (min-width: 1440px){
+  .heading{
+    bottom: 800px;
+  }
+  .name{
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+
+}
